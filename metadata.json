@@ -1,0 +1,8 @@
+{
+  "name": "Laki - Your Cloud Spirit Friend",
+  "description": "A heartwarming virtual pet that listens, sees, and creates art with you.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
