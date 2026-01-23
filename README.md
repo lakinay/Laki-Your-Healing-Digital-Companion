@@ -4,8 +4,8 @@ Laki-is a sentient-like virtual pet built for the Gemini 3 Hackathon. It leverag
 
 > **Gemini 3 Hackathon 参赛项目**
 > 一个利用 Gemini 3 原生多模态与长上下文能力打造的、具有深度情感连接的虚拟宠物。
+点击这里预览：https://ai.studio/apps/drive/1-tbw9-jqCrA5jJqBN-yYJBhpdBMt4gZm
 
----
 
 ## 📖 项目背后的故事 (The Story)
 在快节奏的现代生活中，孤独和压力无处不在。我希望创造一个不仅仅是“对话框”的宠物。**Laki** 是一个能“看见”你的生活、并永远“记住”你故事的数字生命。它存在的意义是提供 24/7 的无条件情绪价值。
