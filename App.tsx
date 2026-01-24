@@ -305,12 +305,16 @@ const App: React.FC = () => {
   };
 
   const generateJournal = async () => {
-      // Allow generation even if history is short (service handles defaults)
       if (isWritingJournal) return;
       setIsWritingJournal(true);
-      const result = await geminiService.generateJournalSummary(messages);
-      setJournalEntries(prev => [{ id: Date.now().toString(), date: new Date().toLocaleDateString(), content: result.content, emoji: result.emoji }, ...prev]);
-      setIsWritingJournal(false);
+      try {
+          const result = await geminiService.generateJournalSummary(messages);
+          setJournalEntries(prev => [{ id: Date.now().toString(), date: new Date().toLocaleDateString(), content: result.content, emoji: result.emoji }, ...prev]);
+      } catch (e) {
+          console.error("Journal Error", e);
+      } finally {
+          setIsWritingJournal(false);
+      }
   };
 
   const handleGenerateImage = async () => {
